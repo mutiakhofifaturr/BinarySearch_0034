@@ -6,3 +6,31 @@ int nPanjang;
 int x;
 
 void input()
+{
+    while (true)
+    {
+        cout << "Masukkan banyaknya arrayn(maksimal 10): ";
+        cin >> nPanjang;
+
+        if (nPanjang <= 10)
+        {
+            break;
+        }
+        else
+        {
+            cout << "\n[!] jumlah elemen tidak boleh lebih dari 10. Silahkan coba lagi.\n";
+        }
+       
+    }
+
+    cout << "\n====================================================\n";
+    cout << "             Masukkan elemen array                    \n";
+    cout << "======================================================\n";
+
+    for (int i = 0; i < nPanjang; i++)
+    {
+        cout << "Data ke-" << (i + 1) << " = ";
+        cin >> element[i];
+    }
+
+}
